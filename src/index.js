@@ -64,7 +64,7 @@ export default {
           eventEmitter.$on(onActiveStr, this[onActiveStr])
         }
       },
-      destroyed () {
+      unmounted () {
         if (eventEmitter && this[onIdleStr]) {
           eventEmitter.$off(onIdleStr, this[onIdleStr])
         }
