@@ -8,7 +8,7 @@
   "main": "dist/build.js",
   "scripts": {
     "build": "rm -rf dist && node build/build.js",
-    "lint": "eslint --ext .js,.vue src"
+    "lint": "eslint --ext .js,.vue src",
     "prepare": "npm run build"  
   },
   "dependencies": {
